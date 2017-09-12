@@ -7,5 +7,5 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 group :developoment, :test do
 gem 'sinatra'
 gem 'shotgun'
-gem 'thin'
+#gem 'thin'
 end

@@ -13,6 +13,14 @@ get'/try' do
   "test"
 end
 
-get '/cat' do
+get '/random-cat' do
+  @random_name = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
  end
+
+get '/named-cat' do
+  p params
+  @name = params[:name]
+  @color = params[:color]
+  erb(:index)
+end
